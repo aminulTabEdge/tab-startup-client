@@ -53,7 +53,7 @@ const ResponsiveNavbar = () => {
           )}
         </li>
         <li className="hover:text-blue-500 transition cursor-pointer">
-          <Link href="/fintech">Fintech</Link>
+          <Link href="/companies">Companies</Link>
         </li>
         <li className="hover:text-blue-500 transition cursor-pointer">
           <Link href="/contact">Contact</Link>
