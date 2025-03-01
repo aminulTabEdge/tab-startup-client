@@ -6,13 +6,13 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import SectionHeading from "../ui/SectionHeading";
-import SectionContainer from "../ui/SectionContainer";
+import Container from "../ui/Container";
 import Image from "next/image";
 import faqData from "@/lib/constData/FaqData";
 
 const FAQ = () => {
   return (
-    <SectionContainer tailwindClass="container mx-auto">
+    <Container className="container mx-auto">
       <SectionHeading title="FAQ" />
 
       <div className="grid sm:grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
@@ -39,7 +39,7 @@ const FAQ = () => {
           </Accordion>
         </div>
       </div>
-    </SectionContainer>
+    </Container>
   );
 };
 
