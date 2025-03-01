@@ -1,17 +1,20 @@
 import React from "react";
 import Link from "next/link";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8">
-      <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto px-6 md:px-12 grid  grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo and Description */}
         <div>
-          <h2 className="text-2xl font-bold">Next.js Project</h2>
-          <p className="mt-2 text-gray-400">
-            Building the future with Next.js.
-          </p>
+          <Image
+            src="/logo.png"
+            width={220}
+            height={60}
+            alt="Tab Statup logo png"
+          />
         </div>
 
         {/* Navigation Links */}
