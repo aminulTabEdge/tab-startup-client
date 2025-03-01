@@ -5,11 +5,11 @@ import Footer from "@/components/Layouts/Footer/Footer";
 
 const MainLayout = ({ children }: ChildrenType) => {
   return (
-    <div>
+    <>
       <Navbar />
-      <div>{children}</div>
+      <div className="min-h-[calc(100vh-310px)]">{children}</div>
       <Footer />
-    </div>
+    </>
   );
 };
 
