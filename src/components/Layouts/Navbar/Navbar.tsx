@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { ChevronDown, Menu } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 const ResponsiveNavbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
@@ -61,11 +62,10 @@ const ResponsiveNavbar = () => {
       </ul>
 
       {/* Account Button */}
-      <Link href="https://portal.tabedge.com/login">
-        <button className="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-md">
-          Account
-        </button>
-      </Link>
+      <Button>
+        <Link href="https://portal.tabedge.com/login"></Link>
+        Portal
+      </Button>
 
       {/* Mobile Menu Toggle */}
       <Menu

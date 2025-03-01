@@ -13,6 +13,9 @@ export type ChildrenType = {
 const RootLayout = ({ children }: ChildrenType) => {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.png" />
+      </head>
       <body>{children}</body>
     </html>
   );
