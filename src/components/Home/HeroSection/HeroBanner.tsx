@@ -4,7 +4,7 @@ import HeroAnimation from "./HeroAnimation";
 
 const HeroBanner = () => {
   return (
-    <div className="relative w-full h-[50vh] md:h-[70vh] lg:h-[80vh] flex items-center justify-center">
+    <div className="relative w-full h-[70vh] md:h-[70vh] lg:h-[80vh] flex items-center justify-center">
       {/* Background Image */}
       <Image
         src="/assets/home/hero-banner.svg"
@@ -21,9 +21,10 @@ const HeroBanner = () => {
       <div className="absolute inset-0 flex items-center p-6 md:p-12 text-white">
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
           <HeroAnimation />
-          <p className="mt-2 md:mt-4 text-base md:text-lg">
-            Startups will gain access to the resources they need to grow their
-            businesses and scale quickly
+          <p className="mt-2 md:mt-4 text-base md:text-lg max-w-2xl">
+            We are building a digital platform to empower startups with
+            mentorship, funding opportunities, essential tools, and educational
+            resources—helping entrepreneurs grow and scale faster.
           </p>
         </div>
       </div>

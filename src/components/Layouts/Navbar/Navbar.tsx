@@ -93,11 +93,14 @@ const ResponsiveNavbar = () => {
           <li className="hover:text-blue-500 transition cursor-pointer">
             <Link href="/">Home</Link>
           </li>
+          <li className="hover:text-blue-500 transition cursor-pointer">
+            <Link href="/about">About</Link>
+          </li>
           <li
             className="hover:text-blue-500 transition cursor-pointer flex items-center gap-2"
             onClick={() => setMobileBankingOpen(!mobileBankingOpen)}
           >
-            Banking
+            Companies
             <ChevronDown
               className={`transition ${
                 mobileBankingOpen ? "rotate-180" : "rotate-0"
@@ -119,7 +122,7 @@ const ResponsiveNavbar = () => {
             </ul>
           )}
           <li className="hover:text-blue-500 transition cursor-pointer">
-            <Link href="/fintech">Fintech</Link>
+            <Link href="/co-founders">Co-Founders</Link>
           </li>
           <li className="hover:text-blue-500 transition cursor-pointer">
             <Link href="/contact">Contact</Link>
