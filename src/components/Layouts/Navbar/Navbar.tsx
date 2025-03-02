@@ -31,12 +31,15 @@ const ResponsiveNavbar = () => {
         <li className="hover:text-blue-500 transition cursor-pointer">
           <Link href="/">Home</Link>
         </li>
+        <li className="hover:text-blue-500 transition cursor-pointer">
+          <Link href="/about">About</Link>
+        </li>
         <li
           className="relative flex items-center gap-1 cursor-pointer hover:text-blue-500"
           onMouseEnter={() => setDesktopBankingOpen(true)}
           onMouseLeave={() => setDesktopBankingOpen(false)}
         >
-          Banking <ChevronDown className="transition" size={20} />
+          Companies <ChevronDown className="transition" size={20} />
           {desktopBankingOpen && (
             <div className="absolute top-full text-center bg-white shadow-lg rounded-md p-5 w-56">
               <ul className="space-y-2 text-gray-700">
@@ -53,8 +56,9 @@ const ResponsiveNavbar = () => {
             </div>
           )}
         </li>
+
         <li className="hover:text-blue-500 transition cursor-pointer">
-          <Link href="/companies">Companies</Link>
+          <Link href="/co-founders">Co-Founders</Link>
         </li>
         <li className="hover:text-blue-500 transition cursor-pointer">
           <Link href="/contact">Contact</Link>
