@@ -3,7 +3,7 @@ import React from "react";
 
 const WhyTabStartup = () => {
   return (
-    <div className="relative bg-[url('/assets/background/business.jpg')] bg-local md:bg-fixed bg-center bg-cover h-auto min-h-[550px] flex items-center justify-center py-16 px-4">
+    <div className="relative bg-[url('/assets/background/business.jpg')] bg-local md:bg-fixed bg-center bg-cover h-auto min-h-[550px] flex items-center justify-center py-16 px-4 2xl:py-24">
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/70"></div>
 
@@ -17,7 +17,7 @@ const WhyTabStartup = () => {
         </p>
 
         {/* Cards Container */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-12 mt-12 md:mt-16 w-full ">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-8 md:gap-12 mt-12 md:mt-16 w-full ">
           {features.map(({ id, icon, title, description }) => (
             <div key={id} className="flex flex-col items-center">
               {icon}
