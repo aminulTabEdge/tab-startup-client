@@ -6,6 +6,7 @@ import HeroBanner from "@/components/Home/HeroSection/HeroBanner";
 import Mission from "@/components/Home/Mission";
 import Services from "@/components/Home/Services";
 import Vision from "@/components/Home/Vision";
+import WhyTabStartup from "@/components/Home/WhyTabStartup";
 import { Metadata } from "next";
 import React from "react";
 
@@ -22,6 +23,7 @@ const HomePage = () => {
       <Mission />
       <Vision />
       <BusinessPlan />
+      <WhyTabStartup />
       <ConncetUs />
       <FAQ />
       <ContactUs />
