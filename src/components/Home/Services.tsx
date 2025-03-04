@@ -11,7 +11,7 @@ const Services = () => {
         title="Offered Services"
         description="We’re committed to empowering entrepreneurs and startups by providing the support they need to thrive. Our platform offers mentorship, funding opportunities, essential tools, and educational resources to help businesses grow and scale effectively."
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 max-w-7xl mx-auto">
         {services.map((service, index) => (
           <Card
             key={index}
