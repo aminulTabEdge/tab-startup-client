@@ -1,22 +1,28 @@
 "use client"; // Ensures this is a client component
 
-export default function GlobalError({
+import { Button } from "@/components/ui/button";
+import React from "react";
+
+const GlobalError = ({
   error,
   reset,
 }: {
   error: Error & { digest?: string };
   reset: () => void;
-}) {
+}) => {
   return (
-    <html>
-      <head>
-        <title>Error occurred</title>
-      </head>
-      <body>
-        <h2>Something went wrong!</h2>
-        <p>{error.message || "An unexpected error occurred"}</p>
-        <button onClick={() => reset()}>Try again</button>
-      </body>
-    </html>
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
+      <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-lg text-center">
+        <h2 className="text-3xl font-semibold text-red-600 mb-4">
+          Something Went Wrong
+        </h2>
+        <p className="text-gray-600 mb-6">
+          {error.message || "An unexpected error occurred"}
+        </p>
+        <Button onClick={() => reset()}>Try Again</Button>
+      </div>
+    </div>
   );
-}
+};
+
+export default GlobalError;
