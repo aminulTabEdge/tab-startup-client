@@ -5,7 +5,7 @@ import { FaLightbulb } from "react-icons/fa";
 
 const Vision = () => {
   return (
-    <Container className="text-center max-w-3xl">
+    <Container className="text-center max-w-3xl" backgroundColor="bg-white">
       <Title title="Our Vision" />
       <FaLightbulb className=" mx-auto mb-4 text-6xl text-yellow-500" />
       <p className="text-lg text-gray-700 max-w-2xl leading-relaxed">

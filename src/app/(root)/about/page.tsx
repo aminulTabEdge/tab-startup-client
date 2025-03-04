@@ -1,6 +1,10 @@
+import Mission from "@/components/About/Mission";
+import Vision from "@/components/About/Vision";
+import AcceleratorModel from "@/components/About/AcceleratorModel";
 import SectionBanner from "@/components/ui/SectionBanner";
 import { Metadata } from "next";
 import React from "react";
+import Valueproposition from "@/components/About/Valueproposition";
 
 export const metadata: Metadata = {
   title: "About | Tab Startup ",
@@ -9,13 +13,17 @@ export const metadata: Metadata = {
 
 const AboutPage = () => {
   return (
-    <div>
+    <>
       <SectionBanner
         backgroundImagePath="/assets/background/blue-gradiant.png"
         className="text-white"
         title="About Tab Startup"
       />
-    </div>
+      <Mission />
+      <Vision />
+      <AcceleratorModel />
+      <Valueproposition />
+    </>
   );
 };
 
