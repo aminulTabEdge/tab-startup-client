@@ -1,4 +1,4 @@
-"use client"; // Ensures this is a client component
+"use client"; 
 
 import { Button } from "@/components/ui/button";
 import React from "react";

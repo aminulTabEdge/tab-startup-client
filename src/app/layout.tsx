@@ -16,7 +16,7 @@ const RootLayout = ({ children }: ChildrenType) => {
       <head>
         <link rel="icon" href="/favicon.png" />
       </head>
-      <body className="bg-slate-200">{children}</body>
+      <body className="bg-slate-100">{children}</body>
     </html>
   );
 };
